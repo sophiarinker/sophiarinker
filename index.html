@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="Copyright 2022"> 
+  <meta name="language" content="english">
+  <meta name="author" content="Sophia Rinker">
+        <!--Open Graph Protocol (for sharing on social media)-->
+        <meta property="og:title" content="name of webpage">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="url">
+        <meta property="og:description" content="a brief description">
+        <meta property="og:locale" content="en-US">
+        <meta property="og:site_name" content="name of website">
+        <meta property="og:image" content="image.png">
+
+<!--Stylesheets, fonts imports-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"/>
+  <link rel="stylesheet" href="./customstyles.css"/>
+  
+  <title>Sophia Rinker's Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><h1>Sophia Rinker</h1></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects-gallery">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Resume</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Please email me for a current resume.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-light" href="mailto:sophia.rinker@gmail.com">Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main>
+    <div class="container">
+        <!-- Welcome -->
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-md-8">
+                <div class="container">
+                    <section class="row row-content align-items-center">
+                        <h2>Welcome</h2>
+                        <p>Hello and welcome to my project portfolio. Please feel free to explore my projects and get to know me as an aspiring front-end web developer. If you have any interesting projects, collaborations or even feedback on how I might improve and grow as a software developer, please do not hesitate to reach out! </p>
+                    </section>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="photos/me.jpg" class="img-fluid" id="me">
+                <button id="moreaboutme-btn" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#about-collapse">
+                    More about me
+                </button>
+            </div>
+        </div>
+        
+        <!-- About Me Accordion -->
+        <div class="row mb-3 mt-3">
+            <div class="col-12">
+
+                <div id="about-collapse" class=" collapse">
+                    <div class="card card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">I live in a small ski town named Revelstoke in British Columbia, Canada.</li>
+                            <li class="list-group-item">I grew up overseas, moving from country to country and developed a passion for travel, culture and making global connections.</li>
+                            <li class="list-group-item">In my spare time, I am an inspired amateur chef, TV show enthusiast and avid reader of science fiction books. </li>
+                            <li class="list-group-item">As a programmer, I am always seeking my next challenge and opportunity for self-improvement. I am a fast learner and I am not afraid to admit when I am out of my comfort-zone and ask for help.</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quote -->
+        <div class="row row-content align-items-center">
+            <div class="col-8 offset-2">
+                <section class="card text-center">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>" Happiness is when what you think, what you say, and what you do are in harmony. "</p>
+                            <footer class="blockquote-footer"> Mahatma Ghandi</footer>
+                        </blockquote>
+                    </div>
+               </section>
+            </div>
+        </div>
+        <!-- Software Journey -->
+        <div class="row">
+            <h2>My Software Journey</h2>
+            <div class="row row-content">
+                <div class="col-12 journey-step">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>
+                        <h4>2017-2021</h4> 
+                        <p>I was a university student studying for my Bachelor's of Science Honors in Zoology with a minor in Neuroscience. My first exposure to the world of coding was through R language statistical analysis which I found equally as frusterating as I did fascinating.</p>
+                   </span>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="col-12 col-md-11 offset-md-1 journey-step">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>
+                        <h4>Dec 2021</h4>
+                        <p>After graduation, I began to learn about computer science through the CS50 edX Harvard course I stumbled across online. Since I had little interest in exclusively learning C, I quickly became interested in the creative aspect of front-end development. </p>
+                    </span>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="col-12 col-md-10 offset-md-2 journey-step">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <span>
+                        <h4>Apr 2022 - Now</h4>
+                        <p>I have been learning essential job skills and building projects using a combination of online resources, coures and bootcamps. My favorite include: </p>
+                        <ul>
+                            <li>freeCodeCamp</li>
+                            <li>Codecademy</li>
+                            <li>UpskillCourses</li>
+                            <li>The Hong Kong University of Science and Technology Coursera Courses</li>
+                            <li>Meta's Front-End Developer Professional Certificate (in progress)</li>
+                            <li>Google's IT Automation with Python Professional Certificate (in progress)</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="col-12">
+                    <p>For a complete list of my courses and certifications that I have pursued, please see my LinkedIn profile linked below. More importantly, for an in-depth look at my projects, please read on!</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- Experience and Skills Accordion w/Tables -->
+        <div class="row">
+            <div class="col-12">
+                <h2>Experience and Skills</h2>
+                <div class="accordion" id="skills-accordion">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Languages
+                        </button>
+                      </h3>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#skills-accordion">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">Language</th>
+                                        <th scope="col">Relevant Projects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-html5"></i></td>
+                                        <td>HTML 5</td>
+                                        <td>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Portfolio Webpage</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">TicTacToe Game</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">ThatsMyJam App</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Vittles App</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-css3-alt"></i></td>
+                                        <td>CSS 3 <br> (incl. SASS & LESS preprocessors)</td>
+                                        <td>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Portfolio Webpage</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">TicTacToe Game</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">ThatsMyJam App</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Vittles App</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-js-square"></i></td>
+                                        <td>Javascript</td>
+                                        <td>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">JS Challenges</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">TicTacToe Game</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">ThatsMyJam App</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Vittles App</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-brands fa-r-project"></i></td>
+                                        <td>R</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-brands fa-python"></i></td>
+                                        <td>Python 3</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Frameworks and Libraries
+                        </button>
+                      </h3>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#skills-accordion">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">Library/Framework</th>
+                                        <th scope="col">Relevant Projects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-brands fa-bootstrap"></i></td>
+                                        <td>Bootstrap/ Reactstrap</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-brands fa-react"></i></td>
+                                        <td>React</td>
+                                        <td>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">ThatsMyJam App</span></a>
+                                            <a href="#"><span class="badge rounded-pill text-bg-secondary">Vittles App</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-dollar-sign"></i></td>
+                                        <td>jQuery</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Other Tools
+                        </button>
+                      </h3>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#skills-accordion">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">Tool</th>
+                                        <th scope="col">Use</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-brands fa-square-git"></i></td>
+                                        <td>Git</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-brands fa-github"></i></td>
+                                        <td>GitHub</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+<!-- Featured Project Carousel-->
+        <div class="row" id="projects-gallery">
+            <div class="col-12">
+                <h2>Featured Project</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                <div id="carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" src="photos/vittles.png"/>
+                            <div class="carousel-caption">
+                                <p class="d-block">A React app built to query the Yelp Fusion API to search for restaurants in a chosen location by best match, rating, number of reviews and even distance from location.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="photos/slide_2.png"/>
+                            <div class="carousel-caption">
+                                <p class="d-block">Search results are displayed with basic information about the restaurant.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" src="photos/slide_3.png"/>
+                            <div class="carousel-caption">
+                                <p class="d-block">Each restaurant can be selected to display more information, photos, opening hours and links to Google Maps and Yelp Reviews. (Codecademy Project)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="btn btn-light btn-sm" id="carouselButton" target = "_blank" href="">
+                        Checkout on GitHub <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card Gallery -->
+        <div class="row">
+            <div class="col-12">
+                <h2>More Projects</h2>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card project">
+                    <a data-bs-toggle="collapse" data-bs-target="#vittles">
+                        <img src="photos/vittles.png" class="card-img-top project-img"/>
+                    </a>
+                    <div class="card-body collapse" id="vittles">
+                        <h4 class="card-title">Vittles</h4>
+                        <div>
+                            <span class="badge rounded-pill text-bg-danger pill">React</span>
+                            <span class="badge rounded-pill text-bg-success pill">JavaScript</span>
+                            <span class="badge rounded-pill text-bg-success pill">CSS 3</span>
+                            <span class="badge rounded-pill text-bg-success pill">HTML 5</span>
+                        </div>
+                        <p>Unfinished. A React-based application that queries the Yelp Fusion API to find restuarants in particular locations. (Codecademy Project)</p>
+                        <a class="btn btn-light"target = "_blank" href="">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card project">
+                    <a data-bs-toggle="collapse" data-bs-target="#thatsmyjam">
+                        <img src="photos/thatsmyjam.png" class="card-img-top project-img"/>
+                    </a>
+                    <div class="card-body collapse" id="thatsmyjam">
+                        <h4 class="card-title">That'sMyJam</h4>
+                        <div>
+                            <span class="badge rounded-pill text-bg-danger pill">React</span>
+                            <span class="badge rounded-pill text-bg-success pill">JavaScript</span>
+                            <span class="badge rounded-pill text-bg-success pill">CSS 3</span>
+                            <span class="badge rounded-pill text-bg-success pill">HTML 5</span>
+                        </div>
+                        <p>Unfinished. A React-based application for building playlists that uses the Spotify API, allowing you to produce playlists and save them to your own spotify account. (Codecademy Project)</p>
+                        <a class="btn btn-light"target = "_blank" href="">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card project">
+                    <a data-bs-toggle="collapse" data-bs-target="#tictactoe">
+                        <img src="photos/tictactoe.png" class="card-img-top project-img"/>
+                    </a>
+                    <div class="card-body collapse" id="tictactoe">
+                        <h4 class="card-title">Browser TicTacToe Game</h4>
+                        <div>
+                            <span class="badge rounded-pill text-bg-success pill">JavaScript</span>
+                            <span class="badge rounded-pill text-bg-success pill">CSS 3</span>
+                            <span class="badge rounded-pill text-bg-success pill">HTML 5</span>
+                        </div>
+                        <p>A simple game built with JavaScript, HTML and CSS (includes DOM manipulation). (Upskill Project)</p>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-light"target = "_blank" href="https://github.com/sophiarinker/TicTacToe-Game">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card project">
+                    <a data-bs-toggle="collapse" data-bs-target="#jschallenges">
+                        <img src="photos/js.png" class="card-img-top project-img"/>
+                    </a>
+                    <div class="card-body collapse" id="jschallenges">
+                        <h4 class="card-title">Javascript Challenges</h4>
+                        <div>
+                            <span class="badge rounded-pill text-bg-success pill">JavaScript</span>
+                        </div>
+                        <p>A collection of completed challenges on freeCodeCamp.com (includes data structures, regular expressions, and much more). (freeCodeCamp Project)</p>
+                        <a class="btn btn-light"target = "_blank" href="https://github.com/sophiarinker/freeCodeCamp-JS">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card project">
+                    <a data-bs-toggle="collapse" data-bs-target="#oldportfolio">
+                        <img src="photos/Profile.png" class="card-img-top project-img"/>
+                    </a>
+                    <div class="card-body collapse" id="oldportfolio">
+                        <h4 class="card-title">Portfolio, Pre-Bootstrap</h4>
+                        <div>
+                            <span class="badge rounded-pill text-bg-success pill">HTML 5</span>
+                            <span class="badge rounded-pill text-bg-success pill">CSS 3</span>
+                        </div>
+                        <p>This very site before I converted it to use Bootstrap 5. Built with HTML5 and native CSS3, it combines the beauty of early static web development with modern design and responsiveness. </p>
+                        <a class="btn btn-light"target = "_blank" href="https://github.com/sophiarinker/sophiarinker.github.io">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="row">             
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <p>Please feel free to send me a message:</p>
+                </div>
+                <div class="col-12 col-sm-auto align-self-center">
+                    <div class="text-center">
+                        <a class="btn contact-icon" href=mailto:sophia.rinker@gmail.com><i class="fa fa-envelope-square fa-lg"></i></a>
+                        <a class="btn contact-icon" href="https://www.linkedin.com/in/sophiarinker" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a class="btn contact-icon" href="https://github.com/sophiarinker" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>

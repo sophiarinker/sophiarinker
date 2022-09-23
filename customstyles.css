@@ -1,0 +1,182 @@
+:root{
+    /*Font Variables*/
+    --name: Aboreto, sans-serif;
+    --text: "Roboto Slab", serif;
+    --titles: Comfortaa, sans-serif;
+
+    /*Color Variables*/
+    /* --accent-color: #1BA098;
+    --base-color: #051622;
+    --light-color: #e6e2ddd2;
+    --bright-color: #DEB992; */
+
+    /* --accent-color: #395B64;
+    --base-color: #212529;
+    --light-color: #E7F6F2;
+    --bright-color: #A5C9CA; */
+
+    --accent-color: #00ADB5;
+    --base-color: #222831;
+    --light-color: #EEEEEE;
+    --bright-color: #7a8494;
+
+    }
+
+body{
+    background-color: var(--base-color);
+    font-size: 1.2rem;
+    font-family: var(--text);
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+    color: var(--bright-color)
+}
+
+.journey-step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.journey-step > i{
+    font-size: 4rem;
+    padding: 2rem;
+
+}
+.carousel-item{
+    height: 550px;
+    background-color: var(--bright-color);
+    border-radius: 15px;
+}
+
+.carousel-item img{
+    max-height: 65%;
+    max-width: 80%;
+    object-fit: cover;
+    margin: 2rem auto;
+    border-radius: 15px;
+}
+
+.carousel-caption{
+    font-size: 80%;
+    color: var(--base-color);
+}
+
+.row-content{
+    min-height: 200px;
+}
+
+h1{
+    font-family: var(--name);
+    color: var(--light-color);
+    font-size: 3rem;
+}
+
+ h3, h4, h5, .nav-link{
+    font-family: var(--titles);
+    color: var(--bright-color);
+}
+
+h2{
+    margin: 2rem 0;
+    font-family: var(--name);
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+footer{
+    padding: 3rem 0;
+    background-color: var(--base-color);
+}
+.project{
+    font-size: 80%;
+    align-items: center;
+    
+}
+.project-img{
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#carouselButton {
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+}
+
+
+
+.pill{
+    font-family: Comfortaa;
+    font-weight: normal
+}
+
+.contact-icon{
+    font-size: 2rem;
+    color: var(--light-color)
+}
+
+.blockquote, .card{
+    background-color: var(--base-color);
+    color: var(--accent-color);
+}
+
+.card{
+    border: none;
+}
+.card-body{
+    color: var(--light-color);
+}
+.card-title{
+    color: var(--accent-color);
+}
+.accordion-item, .accordion-header, .list-group > li{
+    background-color: var(--light-color);
+    font-size: 80%;
+}
+
+.accordion-button{
+    background-color: var(--light-color);
+}
+
+.accordion-button:focus{
+    background-color: var(--bright-color);
+    box-shadow: none;
+    color: var(--base-color)
+}
+.accordion-button:active{
+    background-color: var(--bright-color);
+    box-shadow: none;
+    color: var(--base-color)
+}
+#moreaboutme-btn{
+    display: flex;
+    align-self: flex-end;
+    margin: 1rem auto;
+
+}
+
+#me{
+    border-radius: 15px;
+    border: 3px solid var(--bright-color);
+}
+
+.project{
+    border: 3px solid var(--bright-color);
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--bright-color);
+    box-shadow: none;
+    color: var(--base-color)
+}
+
+td > i{
+    font-size: 3rem;
+}
